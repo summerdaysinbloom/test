@@ -1,0 +1,212 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: url('b.jpg') no-repeat center center;
+  background-size: 100% auto;
+  font: 16px/160% 'Open Sans', sans-serif;
+  padding: 10px;
+  img.bg {
+    position: absolute;
+    opacity: .2;
+    width: 1400px;
+    z-index: -2;
+    -moz-transform: scale(1.5) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    -webkit-transform: scale(1.5) rotate(348deg) translate(-32px, 0px) skew(174deg, 12deg);
+    /*  -o-transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    -ms-transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);*/
+  }
+}
+
+#watermark {
+  opacity: 0.4;
+  position: absolute;
+  right: -200px;
+  top: -200px;
+  width: 800px;
+}
+
+.content{
+  margin:40px; 
+  height:500px; 
+  overflow:auto; 
+  -webkit-border-radius:3px; 
+  -moz-border-radius:3px; 
+  border-radius:3px;
+}
+
+/* Effective */
+a.icon-alone {
+  display:inline-block;
+  color: #211d18;
+  text-decoration: none;
+}
+
+a.icon-alone .screen-reader-text { 
+  position:absolute;
+  top:-9999px;
+  left:-9999px
+}
+
+.screen-reader-text {
+  font-size: 24px;
+}
+
+/* Sidebar */
+.span3 {
+  height: 100%;
+  ul {
+    box-shadow: 0 1px 15px rgba(255,255,255, .3);
+    background: rgba(0,0,0, .7);
+    padding: 15px;
+  }
+}
+
+.nav-list > li {
+  border-bottom: 1px solid rgba(225,225,225,.2);
+  &:hover {
+    background: none;
+    border-bottom: 1px solid #fff;
+  }
+  &:first-child,
+  &:hover:first-child {
+    border-bottom: none;
+    box-shadow: none;
+  }
+  a {
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    padding: 12px 25px;
+    i {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      background: none;
+      color: rgb(163, 33, 33); // B82C2C
+      font-weight: 800;
+      opacity: 1;
+      text-shadow: 1px 1px 0 rgba(225,225,225,.1);
+      i {
+        color: rgb(163, 33, 33);
+        display: block;
+        float: right;
+        margin-right: -5px;
+        margin-top: 3px;
+      }
+    }
+  }
+  &:first-child a {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+#logo {
+  color: #C7C3C1;
+  padding: 115px;
+  background: transparent url('logo-rw.png') no-repeat center center;
+  background-size: 250px;
+  text-indent: -999em;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#footer {
+  color: #C7C3C1;
+  text-align: center;
+  padding: 20px 0 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  #sns {
+    border-bottom: 3px dotted #C9C4C4;
+    padding: 0 0 15px;
+    a {
+      color: #fff;
+      padding: 5px;
+      text-decoration: none;
+      i {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &:hover i{
+      color: #7C2128;
+    }
+  }
+}
+
+#address {
+  padding-top: 16px;
+  p {
+    margin: 0;
+    font-size: 13px;
+    text-shadow: 0 1px 0 rgba(225, 225, 225, 0.1);
+    font-weight: 200;
+    line-height: 125%;
+  }
+}
+
+/* content */
+.span9 {
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(255,255,255, .3);
+  background: rgba(0,0,0, .7);
+  height: 100%;
+  overflow: scroll;
+  div {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 40px;
+    h1 {
+      color: #fff;
+      font-weight: 700;
+      padding: 50px 0 ;
+      text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    }
+    p {
+      text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    }
+  }
+}
+
+/*@media (min-width: 1200px) {
+  .bs-docs-sidenav {
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  }
+  .affix {
+    position: fixed;
+  }
+}
+*/
+
+@media (max-width: 1170px) {
+  body {
+    background: #333 url('b.jpg') no-repeat center center;
+    /*background-color: #333;*/
+    background-size: auto 100%;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 480px) { 
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    background: #333 url('b.jpg') repeat center center;
+    background-size: auto 100%;
+    overflow-y: scroll;
+  }
+}

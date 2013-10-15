@@ -1,0 +1,268 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /*background: url('a-hue-blur4.png') no-repeat center center;*/
+  background: url('b.jpg') no-repeat center center;
+  background-size: 100% auto;
+  color: #fff;
+  /*font-family: 'Open Sans', Verdana,Geneva,sans-serif;*/
+  font: 16px/160% 'Open Sans', Verdana,Geneva,sans-serif;
+  height: 100%;
+  margin:0; 
+  overflow: hidden;
+  padding:0;
+  margin-top: 40px;
+  img.bg {
+    position: absolute;
+    opacity: .2;
+    width: 1400px;
+    z-index: -2;
+    -moz-transform: scale(1.5) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    -webkit-transform: scale(1.5) rotate(348deg) translate(-32px, 0px) skew(174deg, 12deg);
+    /*  -o-transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    -ms-transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);
+    transform: scale(1) rotate(348deg) translate(-32px, 0px) skew(185deg, 12deg);*/
+  }
+}
+
+#watermark {
+  opacity: 0.5;
+  position: absolute;
+  left: 147px;
+  top: 40px;
+  z-index: 0;
+}
+
+.wrapper {
+  /*border: 1px solid red;*/
+  -webkit-border-radius:3px; 
+  -moz-border-radius:3px; 
+  border-radius:3px;
+  display: inline-block;
+  height: 95%;
+  overflow-y: hidden;
+}
+
+/* Effective */
+a.icon-alone {
+  display:inline-block;
+  color: #211d18;
+  text-decoration: none;
+}
+
+a.icon-alone .screen-reader-text { 
+  position:absolute;
+  top:-9999px;
+  left:-9999px
+}
+
+.screen-reader-text {
+  font-size: 24px;
+}
+
+/* Sidebar */
+.span3 {
+  height: 100%;
+  .wrapper {
+    height: 100%;
+      background: -ms-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+      background: -moz-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+      background: -o-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,.3)), color-stop(1, rgba(0,0,0,.9)));
+      background: -webkit-linear-gradient(top, rgba(0,0,0,.3) 0%, rgba(0,0,0,.9) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+      background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.65) 20%,  rgba(0,0,0,.75) 90%, rgba(0,0,0,.80) 100%);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0 1px 15px rgba(255,255,255, .3);
+      overflow-y: hidden;
+      width: 100%;
+    ul {
+      width: 80%;
+      float: left;
+      display: block;
+      padding: 10px 25px 0 25px;
+      position: relative;
+      height: 98%;
+    }
+  }
+}
+
+.nav-list > li {
+  border-bottom: 1px solid rgba(225,225,225,.2);
+  display: block;
+  &:hover {
+    background: none;
+    border-bottom: 1px solid #fff;
+  }
+  &:first-child,
+  &:hover:first-child {
+    border-bottom: none;
+    box-shadow: none;
+  }
+  a {
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    padding: 12px 25px;
+    i {
+      display: none;
+      z-index: 99999;
+    }
+    &:hover,
+    &:focus {
+      background: none;
+      color: rgb(163, 33, 33); // B82C2C
+      opacity: 1;
+      text-shadow: 1px 1px 0 rgba(225,225,225,.1);
+      i {
+        color: rgb(163, 33, 33);
+        display: block;
+        float: right;
+        margin-right: -5px;
+        margin-top: 3px;
+      }
+    }
+  }
+  &:first-child a {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+#logo {
+  color: #C7C3C1;
+  padding: 80px;
+  background: transparent url('logo-rw4-innerglow.png') no-repeat center center;
+  background-size: 250px;
+  text-indent: -999em;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#footer {
+  /*background: #fdd;*/
+  color: #C7C3C1;
+  display: block;
+  text-align: center;
+  padding: 20px 0 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  #sns {
+    padding: 0 0 15px;
+    a {
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      i {
+        color: #fff; // #8D7171
+        text-decoration: none;
+      }
+      &:hover i{
+        color: #7C2128;
+      }
+    }
+  }
+}
+
+#address {
+  border-top: 1px solid rgba(225,225,225,0.2);
+  padding: 16px 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  bottom: 0 !important;
+  a {
+    color: #fff;
+    text-decoration: none;
+    p {
+      font-size: 13px;
+      line-height: 100%;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    &:hover,
+    &:active {
+      color: #000;
+    }
+  }
+  &:hover,
+  &:active {
+    background: rgba(225,225,225, 0.5);
+  } 
+}
+
+#company_ltd {
+  border-top: 1px solid rgba(225,225,225,0.2);
+  text-align: center;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  p {
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+.span9 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(255,255,255, .3);
+  background: -ms-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+  background: -moz-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,.4)), color-stop(1, rgba(0,0,0,.9)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.9) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.65) 20%,  rgba(0,0,0,.75) 90%, rgba(0,0,0,.80) 100%);
+      
+  height: 100%;
+  h1 {
+    padding: 70px 40px;
+  }
+  #content {
+    /*background: rgba(225,225,225,.6);*/
+    height: 80%;
+    overflow:auto;
+    margin: 0;
+    margin-bottom: 40px; 
+    padding: 0 40px;
+    p:last-child {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.container {
+  /*background: #534563;*/
+  height: 92%;
+  margin: auto;
+  padding: 0;
+  padding-top: 3px;
+}
+
+.row {
+  /*background: #fdd;*/
+  height: 100%;
+}
+
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.mCSB_dragger {
+  height: 100px !important;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
+}
